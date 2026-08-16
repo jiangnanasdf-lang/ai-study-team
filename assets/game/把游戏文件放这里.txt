@@ -1,4 +1,4 @@
-把游戏安装包（如 prison_eng.exe / 压缩包 zip）放到这个文件夹，
+把要提供下载的文件（如 AIStudyTeam.exe / 游戏安装包 / 压缩包 zip）放到这个文件夹，
 然后修改 index.html 里 #game 区块中下载按钮的 href。
 
 GitHub 单文件上限约 100MB；更大的文件请放网盘并用外链。

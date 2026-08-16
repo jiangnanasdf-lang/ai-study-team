@@ -161,6 +161,16 @@ coordinate system/
      ```
    - macOS / Linux 还没做就保留 `is-disabled` 置灰按钮
 
+附：仓库里的 `tools/ai_study_tool.py` 是一个示例小工具（招新入口 + 数学小测验），
+`assets/game/AIStudyTeam.exe` 是它打包好的 Windows 程序。改完源码后重新打包：
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed --name AIStudyTeam tools/ai_study_tool.py
+```
+
+打包好的 exe 在 `dist/AIStudyTeam.exe`，覆盖到 `assets/game/` 即可。
+
 ## 八、常见问题
 
 - **字体加载慢**：站点用了 Google Fonts CDN，国内访问可能慢。删掉 `index.html` 里 `<head>` 的 Google Fonts 三行即可回退到系统字体
