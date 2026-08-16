@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI学习队 · 官网</title>
+    <meta name="description" content="AI学习队官方展示门户：AI 学习、数学建模、编程实践一站式了解。"/>
+    <link rel="icon" href="assets/logo.svg"/>
+    <!-- 字体：与参考站同款，通过 Google Fonts CDN 引入（有系统字体兜底） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+    <!-- 动态网格背景（纯 CSS 动画，JS 不参与） -->
+    <div id="grid-bg" aria-hidden="true"></div>
+    <!-- 两个光晕装饰球 -->
+    <div id="glow-orb-1" aria-hidden="true"></div>
+    <div id="glow-orb-2" aria-hidden="true"></div>
+
+    <!-- ==================== 顶部导航 ==================== -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="nav-brand" href="#hero">
+                <img src="assets/logo.svg" alt="AI学习队 logo" width="34" height="34"/>
+                <span>AI学习队</span>
+            </a>
+            <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#team">成员</a></li>
+                <li><a href="#awards">荣誉</a></li>
+                <li><a href="#events">活动</a></li>
+                <li><a href="#game">游戏</a></li>
+                <li><a href="#join">加入</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== 首屏 Hero ==================== -->
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <p class="hero-eyebrow reveal">AI · 数学建模 · 编程</p>
+                <h1 class="hero-title reveal">AI学习队</h1>
+                <p class="hero-sub reveal">
+                    用人工智能洞察世界，用数学建模拆解问题，用代码把想法变成现实。
+                    我们是一群相信「模型改变世界、代码创造未来」的学习者。
+                </p>
+                <div class="hero-actions reveal">
+                    <a class="btn btn-primary" href="#about">了解我们</a>
+                    <a class="btn btn-ghost" href="#join">加入我们</a>
+                </div>
+                <div class="hero-stats reveal">
+                    <div class="stat"><strong>3</strong><span>个核心方向</span></div>
+                    <div class="stat"><strong>6</strong><span>个页面栏目</span></div>
+                    <div class="stat"><strong>1</strong><span>个共同目标</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 关于我们 ==================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">ABOUT</p>
+                    <h2>关于我们</h2>
+                    <p class="lead">这里填写队伍的简介。例如：我们成立于 2026 年，面向对人工智能与数学建模感兴趣的同学，提供每周队课、项目实战与竞赛训练。</p>
+                </header>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <div class="about-icon">🧠</div>
+                        <h3>学 AI</h3>
+                        <p>机器学习、深度学习、大模型应用，从原理到实践一点点啃下来。</p>
+                    </article>
+                    <article class="about-card reveal">
+                        <div class="about-icon">📐</div>
+                        <h3>练建模</h3>
+                        <p>数学建模竞赛全流程训练：读题、建模、求解、写论文。</p>
+                    </article>
+                    <article class="about-card reveal">
+                        <div class="about-icon">💻</div>
+                        <h3>写代码</h3>
+                        <p>Python / MATLAB 双语言实现模型，用真实代码验证每一个想法。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 团队成员 ==================== -->
+        <section id="team" class="section section-alt">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">TEAM</p>
+                    <h2>团队成员</h2>
+                    <p class="lead">占位成员卡片，悬停可翻转查看介绍。把这里的示例替换成你的真实成员。</p>
+                </header>
+                <div class="team-grid">
+                    <!-- 复制这一整块卡片即可新增成员 -->
+                    <article class="flip-card reveal">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="avatar" style="--hue:200">队</div>
+                                <h3>示例队长</h3>
+                                <p class="role">队长 · 建模</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>一句话自我介绍（占位）。</p>
+                                <div class="tags"><span>数学建模</span><span>AI</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card reveal">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="avatar" style="--hue:160">算</div>
+                                <h3>示例副队</h3>
+                                <p class="role">副队长 · 算法</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>一句话自我介绍（占位）。</p>
+                                <div class="tags"><span>机器学习</span><span>Python</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card reveal">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="avatar" style="--hue:40">编</div>
+                                <h3>示例组员</h3>
+                                <p class="role">编程组</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>一句话自我介绍（占位）。</p>
+                                <div class="tags"><span>MATLAB</span><span>可视化</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card reveal">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="avatar" style="--hue:280">视</div>
+                                <h3>示例组员</h3>
+                                <p class="role">视觉组</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>一句话自我介绍（占位）。</p>
+                                <div class="tags"><span>设计</span><span>视频</span></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 荣誉奖项 ==================== -->
+        <section id="awards" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">AWARDS</p>
+                    <h2>荣誉奖项</h2>
+                    <p class="lead">以下均为占位示例，替换成你们的真实奖项，建议附上证书/作品链接。</p>
+                </header>
+                <div class="awards-grid">
+                    <article class="award-card reveal">
+                        <span class="award-year">2026</span>
+                        <h3>数学建模竞赛 · 一等奖（示例）</h3>
+                        <p>队伍名称 / 成员名单（示例）</p>
+                    </article>
+                    <article class="award-card reveal">
+                        <span class="award-year">2026</span>
+                        <h3>人工智能创新赛 · 二等奖（示例）</h3>
+                        <p>队伍名称 / 成员名单（示例）</p>
+                    </article>
+                    <article class="award-card reveal">
+                        <span class="award-year">2025</span>
+                        <h3>校内数学文化节 · 最佳展示（示例）</h3>
+                        <p>队伍名称 / 成员名单（示例）</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 活动时间线 ==================== -->
+        <section id="events" class="section section-alt">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">EVENTS</p>
+                    <h2>队内活动</h2>
+                    <p class="lead">时间线形式展示队伍活动，均为占位示例。</p>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="dot"></span>
+                        <h3>每周队课</h3>
+                        <p>固定时间集中学习 AI 与建模知识，低门槛入门。</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="dot"></span>
+                        <h3>赛前集训</h3>
+                        <p>竞赛前集中训练：真题演练、论文互评、模拟答辩。</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="dot"></span>
+                        <h3>数学文化节</h3>
+                        <p>面向全校的展示与科普活动。</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="dot"></span>
+                        <h3>招新宣讲</h3>
+                        <p>新学期面向新同学的招新宣讲与报名。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 加入我们 ==================== -->
+        <!-- ==================== 游戏下载 ==================== -->
+        <section id="game" class="section section-alt">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">GAME</p>
+                    <h2>游戏下载</h2>
+                    <p class="lead">队伍自研游戏的宣传与下载区。以下内容为示例，改成你的游戏即可。</p>
+                </header>
+
+                <!-- 宣传卡片 -->
+                <div class="game-card reveal">
+                    <h3>奇点监狱 · AI失控</h3>
+                    <p class="game-tagline">逃脱这群数学赋能的 AI！</p>
+                    <!-- 站内锚点跳转：点击滚到下方下载面板 -->
+                    <a class="btn btn-primary" href="#game-download">进入下载游戏</a>
+                </div>
+
+                <!-- 下载面板 -->
+                <div id="game-download" class="download-panel reveal">
+                    <div class="platform-btns">
+                        <!-- 下载站内文件：href 指向仓库里的安装包，download 属性触发下载 -->
+                        <a class="btn btn-primary" href="assets/game/prison_eng.exe" download>💻 Windows 便携版下载</a>
+                        <!-- 未发布的平台：用 span + is-disabled 置灰 -->
+                        <span class="btn btn-ghost is-disabled">🍎 macOS 即将推出</span>
+                        <span class="btn btn-ghost is-disabled">🐧 Linux 即将推出</span>
+                    </div>
+                    <p class="dl-meta">📦 版本 v1.0 · Windows 64位 · 大小约 194MB · 最后更新 2025.05（示例）</p>
+                    <p class="dl-hash">文件 SHA256：d17f1b6c19a3f910ec30b72217bb52111565a22eee021d1193dcf3b66aa55128（示例）</p>
+                    <p class="dl-files">⚙️ 难度配置工具：Configuration_Tool.exe ｜ 🎮 游戏文件：prison_eng.exe</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="section">
+            <div class="container">
+                <div class="join-card reveal">
+                    <p class="eyebrow">JOIN US</p>
+                    <h2>📄 招生计划：40~50人/届</h2>
+                    <p>点击下方按钮进入报名通道（二维码图可放入 assets/images/ 后展示）。</p>
+                    <div class="join-actions">
+                        <!-- 腾讯问卷：新标签页打开报名表 -->
+                        <a class="btn btn-primary" href="https://wj.qq.com/s2/23398546/ad18" target="_blank" rel="noopener">📄 报名意向表</a>
+                        <!-- QQ 群：换成你的「加群链接」（QQ群设置里可生成 qm.qq.com 链接） -->
+                        <a class="btn btn-ghost" href="https://qm.qq.com/q/XXXXXX" target="_blank" rel="noopener">💬 咨询 QQ 群 1076502298</a>
+                        <!-- 邮件：mailto 直接唤起发信软件 -->
+                        <a class="btn btn-outline" href="mailto:1984705083@qq.com">✉️ 发送邮件</a>
+                    </div>
+                    <p class="join-hint">把问卷链接、QQ群链接、邮箱换成你自己的</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© <span id="year">2026</span> AI学习队 · 保留所有权利</span>
+            <span class="footer-slogan">Model the World, Code the Future</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
